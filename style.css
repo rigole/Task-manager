@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+html {
+    box-sizing: border-box;
+}
+:root{
+    --column-1: #a2622d;
+    --column-2: #1b6161;
+    --column-3: #248224;
+    --column-: #a22d22;
+}
+
+body{
+    margin: 0;
+    background: url("./trees.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 60%;
+    color: white;
+    font-family: Quicksand, sans-serif;
+    overflow-y: hidden;
+}
