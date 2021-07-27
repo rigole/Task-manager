@@ -187,3 +187,26 @@ ul{
 .add-item:focus {
     outline: none;
 }
+
+/* Media Query: Laptop */
+@media screen and (max-width: 1800px){
+    .main-title {
+        font-size: 2rem;
+    }
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+    body {
+        overflow-y: auto;
+    }
+    .drag-container {
+        margin: 0;
+    }
+    .drag-list {
+        display: block;
+    }
+    .drag-column {
+        margin: 10px;
+    }
+}
