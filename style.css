@@ -127,3 +127,63 @@ ul{
     background-color: white;
     color: black;
 }
+
+/* Add Button Group */
+.add-btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+.add-btn{
+    margin: 10px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+    user-select: none;
+}
+.add-btn:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+.add-btn:active{
+    transform: scale(0.97);
+}
+.solid {
+    display: none;
+}
+.solid:hover {
+    transition: unset;
+    filter: brightness(95%);
+    color: white;
+}
+.plus-sign {
+    font-size: 1.5rem;
+    margin-right: 5px;
+    position: relative;
+    top: -3px;
+}
+.add-container {
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-height: 100px;
+    display: none;
+}
+.add-item {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px auto;
+    resize: none;
+    color: black;
+    padding: 10px;
+}
+.add-item:focus {
+    outline: none;
+}
