@@ -7,8 +7,25 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="main-title">Main Board</h1>
 
+    <h1 class="main-title">Main Board</h1>
+    <div class="drag-container">
+        <ul class="drag-list">
+            <!-- Backlog Column -->
+            <li class="drag-column backlog-column">
+                <span class="header">
+                    <h1>Backlog</h1>
+                </span>
+                <!-- Backlog Content -->
+                <div id="backlog-content">
+                    <ul class="drag-item-list" id="backlog-list">
+                        <li class="drag-item">Itachi</li>
+                        <li class="drag-item">Jiraya</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
