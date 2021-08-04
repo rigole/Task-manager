@@ -108,6 +108,22 @@ function drag(e) {
     draggedItem = e.target;
 
 }
+// Show Add Item Input Box
+function showInputBox(column) {
+    addBtns[column].style.visibility = 'hidden';
+    saveItemsBtns[column].style.display = 'flex';
+    addItemContainers[column].style.display = 'flex';
+}
+
+// Hide Item Input Box
+function hideInputBox(column) {
+    addBtns[column].style.visibility = 'visibility';
+    saveItemsBtns[column].style.display = 'none';
+    addItemContainers[column].style.display = 'none';
+
+}
+
+
 
 // Column Allows for Item to Drop
 function allowDrop(e) {
