@@ -101,8 +101,17 @@ function updateDOM() {
     })
 
     // Run getSavedColumns only once, Update Local Storage
+    updatedOnLoad = true;
+    updateSavedColumns();
 }
 
+// Add to column list, Reset TextBox
+function addToColumn(column) {
+    const itemText = addItems[column].textContent;
+    const selectedArray = listArrays[column];
+    selectedArray.push(itemText);
+    updateDOM();
+}
 //Drag function when we start dragging an element
 function drag(e) {
     draggedItem = e.target;
@@ -115,12 +124,14 @@ function showInputBox(column) {
     addItemContainers[column].style.display = 'flex';
 }
 
+
+
 // Hide Item Input Box
 function hideInputBox(column) {
     addBtns[column].style.visibility = 'visibility';
     saveItemsBtns[column].style.display = 'none';
     addItemContainers[column].style.display = 'none';
-
+    addToColumn(column);
 }
 
 
